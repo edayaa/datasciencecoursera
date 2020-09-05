@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>My Slidify</title>
+	<meta name="description" content="My Slidify">
+	<meta name="author" content="Edayadulla Mohamed Iqbal">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Simple Slidify Projext</h3>
+  <ol>
+<li>Simple Scatter Plot</li>
+<li>Simple Table</li>
+<li>Simple Histogram</li>
+<li>End</li>
+</ol>
+
+</article>
+
+<article class="" id="simple-plot" style="background:;">
+  <h3>A Simple Plot</h3>
+  <p>Let us create a simple scatterplot.</p>
+
+<pre><code class="r">require(ggplot2)
+qplot(wt, mpg, data = mtcars)
+</code></pre>
+
+<p><img src="assets/fig/simple-plot-1.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" /></p>
+
+</article>
+
+<article class="" id="simple-table" style="background:;">
+  <h3>A Simple Table</h3>
+  <p>Let us create a simple table.</p>
+
+<pre><code class="r">head(mtcars)
+</code></pre>
+
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+</code></pre>
+
+</article>
+
+<article class="" id="simple-Histogram" style="background:;">
+  <h3>A Simple Histogram</h3>
+  <p>Here is the sample Histogram.</p>
+
+<pre><code class="r">hist(mtcars$cyl,main = paste(&quot;Histogram of&quot; , &quot;Mtcars Cylinders&quot;),col = 5 , xlab = &quot;Cylinders&quot; , labels = TRUE)
+</code></pre>
+
+<p><img src="assets/fig/simple-histogram-1.png" title="plot of chunk simple-histogram" alt="plot of chunk simple-histogram" style="display: block; margin: auto;" /></p>
+
+</article>
+
+<article class="" id="End" style="background:;">
+  <h3>End</h3>
+  
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- Google Prettify -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+	<script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+	<script>
+	  var pres = document.getElementsByTagName("pre");
+	  for (var i=0; i < pres.length; ++i) {
+	    pres[i].className = "prettyprint linenums";
+	  }
+	  prettyPrint();
+	</script>
+	<!-- End Google Prettify --> 
+	</html>
