@@ -1,0 +1,36 @@
+---
+title: "My_Slidify"
+author: "Edayadulla M"
+date: "9/13/2020"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+## R reproducable presentation project 
+
+-  Reproducable presentation 
+-  Simple Scatter Plot
+-  Simple Table
+-  Simple Histogram
+-  End
+
+## A Simple Plot ##
+
+```{r 1.Simple Plot, echo =  FALSE }
+require(ggplot2)
+qplot(wt, mpg, data = mtcars)
+```
+
+## Slide with simple table
+
+```{r, 2. simple table, echo =  FALSE }
+head(mtcars)
+```
+
+## Slide with Plot
+
+```{r 3. simple histogram, echo =  FALSE }
+hist(mtcars$cyl,main = paste("Histogram of" , "Mtcars Cylinders"),col = 5 , xlab = "Cylinders" , labels = TRUE)
+```
+
+## End 
